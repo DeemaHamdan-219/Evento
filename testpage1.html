@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign-Up</title>
+    <link rel="stylesheet" href="testpage2.css">
+    <script defer src="testpage3.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <!-- LOGIN FORM -->
+        <div class="face front">
+            <h2>Welcome Back 👋</h2>
+            <p>Login to continue</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <span class="icon">📧</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="icon">🔑</span>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="toggle">Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+        </div>
+
+        <!-- SIGN-UP FORM -->
+        <div class="face back">
+            <h2>Create Account 🎉</h2>
+            <p>Sign up to get started</p>
+
+            <form id="signupForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <span class="icon">👤</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="signupEmail" placeholder="Email" required>
+                    <span class="icon">📧</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                    <span class="icon">🔑</span>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p class="toggle">Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
