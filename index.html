@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Times New Roman', serif;
-            background: url(image/peter-thomas-rzPOOSDNBM4-unsplash.jpg) no-repeat center center fixed;
+            background: url(peter-thomas-rzPOOSDNBM4-unsplash.jpg) no-repeat center center fixed;
             background-size: cover;
             text-align: center;
             margin: 0;
@@ -15,7 +15,7 @@
         }
 
         .navbar {
-            background-color: black; /* Black color for navbar */
+            background-color: black;
             padding: 15px;
             display: flex;
             justify-content: space-between;
@@ -34,135 +34,18 @@
             font-weight: bold;
         }
 
-        .search-box {
-            position: relative;
-            margin-right: 20px;
-        }
-
-        .search-box input {
-            display: none;
-            padding: 5px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .search-box i {
-            font-size: 20px;
-            cursor: pointer;
-            color: white;
-        }
-
-        .social {
-            margin-top: 20px;
-        }
-
-        .social a {
-            display: inline-block;
-            margin: 10px;
-            text-decoration: none;
-            font-size: 24px;
-            color: white;
+        .icons {
+            margin-right: 30px;
         }
 
         .icons a {
             font-size: 24px;
-            margin: 10px;
+            margin: 0 5px;
             color: white;
-        }
-
-        /* Improved Styles for Welcome and Enjoy Text */
-        h1 {
-            color: white;
-            font-size: 60px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-top: 200px;
-            animation: slideIn 1.5s ease-out forwards; /* Animation for Welcome */
-        }
-
-        /* Animation for Welcome text */
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        p {
-            color: black;
-            font-size: 30px;
-            margin-top: 20px;
-            font-weight: normal;
-        }
-
-        /* Style for the information section below */
-        .info-section {
-            background-color: #f5f5dc; /* Beige background */
-            padding: 40px 20px;
-            text-align: center;
-            color: black;
-            margin-top: 100px; /* Added space between image and info section */
-        }
-
-        .info-section p {
-            font-size: 20px;
-            font-family: 'Times New Roman', serif;
-        }
-
-        /* Style for the buttons */
-        .buttons {
-            margin-top: 30px;
-        }
-
-        .buttons a {
-            background-color: #f5f5dc;
-            color: black;
-            padding: 15px 30px;
-            font-size: 20px;
-            text-decoration: none;
-            margin: 0 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .buttons a:hover {
-            background-color:  black; /* Darker shade on hover */
-        }
-
-        /* Down arrow animation */
-        .arrow-down {
-            font-size: 40px;
-            color: white;
-            margin-top: 50px;
-            animation: bounce 2s infinite;
-            cursor: pointer;
-        }
-
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(10px); }
-            100% { transform: translateY(0); }
         }
 
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
-    <script>
-        function toggleSearch() {
-            var searchInput = document.getElementById("search-input");
-            if (searchInput.style.display === "none" || searchInput.style.display === "") {
-                searchInput.style.display = "inline-block";
-                searchInput.focus();
-            } else {
-                searchInput.style.display = "none";
-            }
-        }
-    </script>
 </head>
 <body>
 
@@ -173,34 +56,11 @@
         <a href="#">Contact Us</a>
         <a href="#">Login</a>
     </div>
-    <div class="search-box">
-        <i class="fas fa-search" onclick="toggleSearch()"></i>
-        <input type="text" id="search-input" placeholder="Search...">
-    </div>
     <span class="icons">
         <a href="https://www.facebook.com/share/1A7hff8WGc/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-x-twitter"></i></a>
     </span>
-</div>
-
-<!-- Hero Section (Image and text) -->
-<div class="hero-section">
-    <h1>Welcome</h1>
-    <div class="arrow-down">
-        &#8595; <!-- Down Arrow -->
-    </div>
-</div>
-
-<!-- Information Section below the image -->
-<div class="info-section">
-    <p>Our platform offers a seamless experience for booking a wide range of events, including educational workshops, training sessions, and entertainment activities. Whether you're looking to attend a professional development course, participate in a creative workshop, or enjoy a fun recreational event, our website provides an easy and efficient way to find and secure your spot. With detailed event descriptions, flexible scheduling options, and secure payment methods, we make it simple for users to discover and book their next exciting experience, all in one place. </p>
-</div>
-
-<!-- Buttons for courses -->
-<div class="buttons">
-    <a href="#">Educational Courses</a>
-    <a href="#">Entertainment Courses</a>
 </div>
 
 </body>
