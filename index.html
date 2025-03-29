@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            z-index: 10;
+        }
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        footer .social-icon {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        footer .contact-info {
+            text-align: center;
+            font-size: 16px;
+        }
         body {
             font-family: 'Times New Roman', serif;
-
-
-            background: url(peter-thomas-rzPOOSDNBM4-unsplash.jpg) no-repeat center center fixed;
-            background-size: cover;
             text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('image/bbbbbbb.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .navbar {
@@ -46,17 +69,97 @@
             color: white;
         }
 
+        .header-image {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .block {
+            width: 80%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-slider {
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;  /*  الفجوة بين الصور */
+            width: 90%;
+            padding: 10px;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .event-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .event-slider img {
+            width: 400px;  /* زيادة العرض */
+            height: 300px; /* زيادة الارتفاع */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        h3 {
+            font-size: 32px;
+            color: #d2a679;
+            display: inline-block;
+            animation: glowAndMove 2s infinite;
+        }
+
+        /* تعريف الحركة والإضاءة */
+        @keyframes glowAndMove {
+            0% {
+                transform: translateY(0);
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #c68c53, 0 0 15px #c68c53;
+            }
+            25% {
+                transform: translateY(-10px);
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #c68c53, 0 0 30px #c68c53;
+            }
+            50% {
+                transform: translateY(10px);
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #604020, 0 0 30px #ffffff;
+            }
+            75% {
+                transform: translateY(-10px);
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #c68c53, 0 0 30px #c68c53;
+            }
+            100% {
+                transform: translateY(0);
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #c68c53, 0 0 15px #c68c53;
+            }
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<img src="phhhh/people-taking-part-high-protocol-event.jpg" alt="Event Image" class="header-image">
+
 <div class="navbar">
     <div>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Login</a>
+        <a href ="jana.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="log_sign1.html">Login</a>
     </div>
     <span class="icons">
         <a href="https://www.facebook.com/share/1A7hff8WGc/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -64,6 +167,37 @@
         <a href="#"><i class="fab fa-x-twitter"></i></a>
     </span>
 </div>
+
+<div class="content-container">
+    <div class="block">
+        <p>Evento is your ultimate platform for discovering and booking entertainment and educational events with ease! We provide a comprehensive guide to the latest happenings, from music concerts and theater shows to workshops and training courses. Browse events by category, location, or date, and access full details, including venue, time, and pricing. Book your ticket directly through the website and enjoy a unique experience tailored to your interests! 🎟️✨</p>
+    </div>
+    <div class="block">
+        <h3>Top 5 Trending Events</h3>
+        <div class="event-slider">
+            <a href="page.html"><img src="phhhh/lllll.jpg" alt="Event 1"></a>
+            <a href="page.html"><img src="phhhh/nnnn.jpg" alt="Event 2"></a>
+            <a href="page.html"><img src="phhhh/robit.jpg" alt="Event 3"></a>
+            <a href="page.html"><img src="phhhh/walk.jpg" alt="Event 4"></a>
+            <a href="page.html"><img src="phhhh/write.jpg" alt="Event 5"></a>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1A7hff8WGc/?mibextid=wwXIfr" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="contact-info">
+            <p><strong>Email :</strong>  s12240035@stu.najah.edu</p>
+            <p><strong>Contact Number :</strong> 0595209807 </p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
