@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign-Up</title>
+  <link rel="stylesheet" href="login_sign.css">
+  <script defer src="login_sign.js"></script>
+</head>
+<style>
+  footer {
+    background-color:  #AC3B61;
+    color: #123C69;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+
+  .nav {
+    background-color: #575e75;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav :hover {
+    color: #007bff;
+  }
+
+  .icons {
+    margin-right: 30px;
+  }
+
+  .icons a {
+    font-size: 24px;
+    margin: 0 5px;
+    color: #ffffff;
+  }
+
+  .icons a:hover {
+    color: #007bff;
+  }
+
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="nav">
+  <div>
+    <nav>
+      <a href="index.html" style="margin-right: 10px;">Home</a>
+      <a href="login_sign.html" style="margin-right: 10px;">log in</a>
+      <a href="Info.html">Info</a>
+    </nav>
+  </div>
+  <span class="icons">
+        <a href="https://www.facebook.com/share/1A7hff8WGc/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </span>
+</div>
+
+</body>
+
+<div class="container">
+  <div class="card">
+    <!-- LOGIN FORM -->
+    <div class="face front">
+      <h2>Welcome Back 👋</h2>
+      <p>Login to continue</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+          <span class="icon">📧</span>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="icon">🔑</span>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="toggle">Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+    </div>
+
+    <!-- SIGN-UP FORM -->
+    <div class="face back">
+      <h2>Create Account 🎉</h2>
+      <p>Sign up to get started</p>
+
+      <form id="signupForm">
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Full Name" required>
+          <span class="icon">👤</span>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="signupEmail" placeholder="Email" required>
+          <span class="icon">📧</span>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="signupPassword" placeholder="Password" required>
+          <span class="icon">🔑</span>
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="toggle">Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </div>
+  </div>
+</div>
+
+</html>
